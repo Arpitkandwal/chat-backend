@@ -4,7 +4,8 @@
         enabled: true,
         config: {
             jwt: {
-            jwtSecret: 'aDdlHfGo1MO8zkJXeKKq3g==', // Replace this with your generated secret
+            // @ts-ignore
+            jwtSecret: crypto.randomBytes(16).toString('base64'), // Replace this with your generated secret
             },
         },
         },
